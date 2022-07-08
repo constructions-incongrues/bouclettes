@@ -7,9 +7,7 @@ RUN apt-get update && \
         make \
         qpdf
 
-ENV BOUCLETTES_SHARD_LENGTH=40 
-ENV BOUCLETTES_DATA_DIR=/data 
-ENV BOUCLETTES_PROJECT=default
+ENV BOUCLETTES_LENGTH=40 
 
 VOLUME [ "/data" ]
 
