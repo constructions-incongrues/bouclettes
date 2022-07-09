@@ -19,6 +19,7 @@ booklets: init shards
 		echo -n "."; \
 		bookletimposer --no-gui --booklet --output=$(DATA_DIR)/booklets/$${BOUCLETTES_LENGTH}/$$(basename $${shard} .pdf).pdf $${shard} > /dev/null; \
 	done
+	@rm -rf $(DATA_DIR)/shards/$${BOUCLETTES_LENGTH}
 	@echo
 	@echo "[booklets] Created $$(ls $(DATA_DIR)/booklets/$${BOUCLETTES_LENGTH}/*.pdf | wc -l) booklets"
 
