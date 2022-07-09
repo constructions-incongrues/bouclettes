@@ -16,8 +16,10 @@
     docker run \
         -v $PWD:/data \
         -e BOUCLETTES_LENGTH=40 \
-        ghcr.io/constructions-incongrues/bouclettes:main
+        ghcr.io/constructions-incongrues/bouclettes
     ```
+
+- Les livrets générés se trouvent dans le dossier `./booklets`
 
 ## Configuration
 
