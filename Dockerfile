@@ -7,7 +7,7 @@ RUN apt-get update && \
         make \
         qpdf
 
-ENV BOUCLETTES_LENGTH=40 
+ENV BOUCLETTES_LENGTH=40
 
 VOLUME [ "/data" ]
 
@@ -15,6 +15,8 @@ WORKDIR /usr/src/app
 
 COPY ./src /usr/src/app
 
+USER 1000:1000
+
 ENTRYPOINT [ "make" ]
 
-CMD [ "booklets", "permissions" ]
+CMD [ "booklets" ]
